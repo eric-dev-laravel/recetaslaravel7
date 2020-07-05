@@ -3,7 +3,7 @@
 @section('content')
 
     <article class="contenido-receta bg-white p-5 shadow">
-        <h1 class="text-center mb-4"> {{ $receta->titulo }}</h1>
+        <h1 class="text-center mb-4"> {{ Str::upper($receta->titulo) }}</h1>
 
         <div class="imagen-receta">
             <img src="/storage/{{ $receta->imagen }}" alt="receta" class="w-100">
@@ -34,16 +34,24 @@
 
             </p>
 
-            <div class="ingredientes">
-                <h2 class="my-3 text-primary">Ingredientes</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="ingredientes col-sm-12 col-md-4">
+                        <h2 class="my-3 text-primary">Ingredientes</h2>
+        
+                        {!! $receta->ingredientes !!}
+                    </div>
 
-                {!! $receta->ingredientes !!}
-            </div>
-
-            <div class="preparacion">
-                <h2 class="my-3 text-primary">Preparación</h2>
-
-                {!! $receta->preparacion !!}
+                    <div class="anuncio-central col-sm-12 col-md-8" style="background-color: red">
+                        Anuncio
+                    </div>
+        
+                    <div class="preparacion col-md-12">
+                        <h2 class="my-3 text-primary">Preparación</h2>
+        
+                        {!! $receta->preparacion !!}
+                    </div>
+                </div>
             </div>
 
             <div class="justify-content-center row text-center">

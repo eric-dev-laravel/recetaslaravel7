@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <h2 class="titulo-categoria text-uppercase mt-5 mb-4">
+    <div class="container bg-white p-5 shadow">
+        <h2 class="titulo-categoria text-uppercase mb-4">
             Resultados: {{ $busqueda }}
         </h2>
 

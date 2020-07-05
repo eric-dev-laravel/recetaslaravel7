@@ -55,6 +55,7 @@ class RecetaController extends Controller
      */
     public function store(Request $request)
     {
+        //dd($request['imagen']);
         //Validacion
         $data = request()->validate([
             'titulo' => 'required|min:6',
@@ -66,7 +67,6 @@ class RecetaController extends Controller
         
         //Obtener ruta de la imagen
         $ruta_imagen =$request['imagen']->store('upload-recetas', 'public');
-
         //Resize de la imagen
         $img = Image::make(public_path("storage/{$ruta_imagen}"))->fit(1200, 550);
         $img->save();

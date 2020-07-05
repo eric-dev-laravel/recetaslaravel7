@@ -35,10 +35,11 @@
                         <img src="/storage/{{ $nueva->imagen }}" class="card-img-top" alt="imagen receta">
     
                         <div class="card-body">
-                            <h3>{{ Str::ucfirst( $nueva->titulo ) }}</h3>
+                            <h3>{{ Str::upper( $nueva->titulo ) }}</h3>
 
                             <p>{{ Str::words( strip_tags($nueva->preparacion), 20) }}</p>
-
+                        </div>
+                        <div class="card-footer bg-white">
                             <a href="{{ route('recetas.show', ['receta' => $nueva->id]) }}"
                                 class="btn btn-primary d-block font-weight-bold text-uppercase">Ver Receta</a>
                         </div>
