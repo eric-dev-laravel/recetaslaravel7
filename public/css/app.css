@@ -10978,11 +10978,25 @@ trix-editor {
   color: #FFF;
 }
 
+.titulo-receta {
+  font-family: "Cabin", sans-serif;
+  color: #ED4646;
+}
+
+.info-receta {
+  color: #ED4646;
+  font-weight: bold;
+}
+
+.final-receta {
+  border-bottom: 3px solid #E5BE01 !important;
+}
+
 .titulo-categoria {
   font-family: "Cabin", sans-serif;
-  color: #333;
+  color: #ED4646;
   font-size: 1.8rem;
-  border-bottom: 3px solid #ED4646 !important;
+  border-bottom: 3px solid #E5BE01 !important;
   display: inline-block;
   padding-bottom: 0.5rem;
   padding-right: 2rem;
@@ -10992,6 +11006,7 @@ trix-editor {
 .btn-receta:hover {
   background-color: #ED4646 !important;
   border: none;
+  color: white;
 }
 
 .owl-carousel .owl-stage {
@@ -11013,7 +11028,7 @@ trix-editor {
 }
 
 .categorias-bg {
-  background-color: #fff;
+  background-color: #E5BE01;
 }
 
 .categorias-bg .nav-link {
@@ -11059,6 +11074,10 @@ trix-editor {
 .hero-categorias .texto-buscar p {
   font-size: 1.4rem;
   color: #FFF;
+}
+
+.header-form {
+  background: #E5BE01;
 }
 
 .like-btn {

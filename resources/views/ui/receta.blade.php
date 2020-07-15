@@ -24,7 +24,7 @@
 
         <div class="card-footer bg-white">
             <a href="{{route('recetas.show', ['receta' => $receta->id])}}"
-                class="btn btn-primary d-block btn-receta">
+                class="btn btn-primary d-block btn-receta text-uppercase">
                 Ver Receta
             </a>
         </div>

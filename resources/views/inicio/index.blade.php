@@ -41,7 +41,7 @@
                         </div>
                         <div class="card-footer bg-white">
                             <a href="{{ route('recetas.show', ['receta' => $nueva->id]) }}"
-                                class="btn btn-primary d-block font-weight-bold text-uppercase">Ver Receta</a>
+                                class="btn btn-receta d-block font-weight-bold text-uppercase">Ver Receta</a>
                         </div>
                     </div>
             
