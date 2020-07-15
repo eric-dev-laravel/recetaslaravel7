@@ -42,7 +42,7 @@
                         {!! $receta->ingredientes !!}
                     </div>
 
-                    <div class="anuncio-central col-sm-12 col-md-8" style="background-color: red">
+                    <div class="anuncio-central col-sm-12 col-md-8" style="background-color:green">
                         Anuncio
                     </div>
         
