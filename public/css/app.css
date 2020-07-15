@@ -11080,6 +11080,18 @@ trix-editor {
   background: #E5BE01;
 }
 
+.titulo-perfil {
+  font-family: "Cabin", sans-serif;
+  color: #ED4646;
+}
+
+.recetas-perfil {
+  font-family: "Cabin", sans-serif;
+  color: #ED4646;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #E5BE01 !important;
+}
+
 .like-btn {
   display: inline-block;
   Cursor: pointer;
